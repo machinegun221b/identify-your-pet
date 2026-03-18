@@ -31,7 +31,6 @@ So first we extract those labels, done easy with the fastAI built in function:  
 
 # Model Training
 - CNN
-  -  with a single hidden layer as a classifier
   -  Conv2d + ReLU
 - ResNet34
 - ResNet50
