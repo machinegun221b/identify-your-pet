@@ -45,6 +45,7 @@ Model made reasonable predictions in the initial run. Was not naively obvious.
 
 Confusion matrix shows errors are concentrated between specific breed pairs.  <br>
 Rarely confuses other categories.
+i.e., the model is actually learning the visual features rather than guessing randomly.
 
 <img width="828" height="767" alt="Screenshot 2026-03-18 at 4 30 16 PM" src="https://github.com/user-attachments/assets/55561e60-5fa8-4c09-94b4-0da9bc36c80a" />
 
