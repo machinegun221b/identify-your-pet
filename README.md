@@ -30,7 +30,7 @@ So first we extract those labels, done easy with the fastAI built in function:  
 `ImageDataBunch.from_name_re`
 
 # Model Training
-- Basic CNN
+- CNN
   -  with a single hidden layer as a classifier
   -  Conv2d + ReLU
 - ResNet34
@@ -39,11 +39,14 @@ So first we extract those labels, done easy with the fastAI built in function:  
   - lower batch size (GPU constraints)
 
 and finetuning with  <br>
-`learn.fit`
+`learn.fit_one_cycle()`
 
 # Results
-Model made reasonable predictions in the initial run. Was not naively obvious.  <br>
-Confusion matrix shows heavily skewed distribution - meaning specific categories were mistaken and rarely confuses other categories.
+Model made reasonable predictions in the initial run. Was not naively obvious.
+
+Confusion matrix shows errors are concentrated between specific breed pairs.  <br>
+Rarely confuses other categories.
+
 
 ### ResNet34 v ResNet50
 ResNet50 performs better with it being a deeper network with more parameters available to it. 
